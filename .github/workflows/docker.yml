@@ -32,7 +32,7 @@ jobs:
       uses: docker/build-push-action@v3.3.0
       with:
         context: .
-        file: ./Dockerfile
+        file: ./api-golang/Dockerfile
         push: true
         tags: vmoney2021/api-golang:${{github.ref_name}}
         
